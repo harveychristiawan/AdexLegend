@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    /* height: 110px; */
+    height: 15vh;
+    font-size: 20px;
+    background-color: rgba(206, 206, 206, 1);
+    position: absolute;
+    /* position: relative; */
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    padding: 3% 3%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+nav img{
+    width: 145px;
+    height: 90px;
+    left: 40px;
+    top: 7px;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 0px 6rem;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.navbar ul li :hover{
+    color: red;
+    transition: 0.3s;
+}
+
+.registration{
+    position: relative;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/coffee\ paper\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4%;
+}
+.registration h3{
+    font-size: 60px;
+}
+.registration p{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.registration input{
+    width: 100%;
+    margin-bottom: 1%;
+    border: 1px solid black;
+    height: 4vh;
+}
+
+
+.color-red{
+    color: rgb(233, 1, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.check input{
+    position: relative;
+    transform: scale(2);
+    width: auto;
+}
+.check{
+    font-size: 20px;
+    font-weight: 600;
+    width: 110%;
+}
+#checkbox1{
+    display: inline-block;
+    top: 10%;
+    
+}
+#checkbox1[type=checkbox]{
+    position: flex;
+    top: 1vh;
+    margin-right: 2%;
+    
+}
+
+#registration-btn{
+    
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40%;
+    padding: 1%;
+    cursor: pointer;
+    
+}
+#registration-btn[type=button]{
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    position: flex;
+    margin-left: 23%;
+   
+}
+#registration-btn[type=button]:hover{
+    border: 3px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+
+footer{
+    position: absolute;
+    text-align: left;
+    padding-top: 30px;
+    font-size: 32px;
+    /* top: 245vh; */
+    /* top: 256vh; */
+    top: auto;
+    width: 100%;
+    /* height: 250px; */
+    height: 35vh;
+    padding-left: 6%;
+    background-color: rgba(206, 206, 206, 1);
+    list-style: none;
+    z-index: 1;
+    font-family: Roboto;
+    text-transform: none;
+}
+
+footer img{
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    padding: 20px;
+    padding-left: 0%;
+    text-align: left;
+    float: left;
+    object-fit: cover;
+    text-decoration: none;
+}
+
+footer ul li{
+    
+    padding: 0px 5rem;
+    display: inline-block;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+#instagram{
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 200px;
+}
+
+#twitter{
+    position: absolute;
+    top: 75px;
+    width: 115px;
+    left: 400px;
+}
+
+#facebook{
+    position: absolute;
+    top: 75px;
+    width: 90px;
+    left: 720px;
+}
+
+#instagramaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 175px;
+}
+
+#twitteraccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 495px;
+    color: black;
+}
+
+#facebookaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 805px;
+    color: black;
+}
+
+#copyright2022{
+    position: absolute;
+    font-size: 30px;
+    top: 195px;
+    left: 90px;
+}
+
+#warning{
+    position: absolute;
+    top: 65px;
+    width: 250px;
+    height: 150px;
+    right: 50px;
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        font-size: 5px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 1rem;
+        position: absolute;
+    }
+    .header img{
+        width: 50%;
+        max-width: 110px;
+        height: 100%;
+        max-height: 80px;
+        left: 3%;
+        top: 50%;
+        transform: translate(-3%, -50%);
+        
+    }
+    .navbar ul li{
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        margin-top: 1%;
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        flex-direction: column;
+        /* left: 65%; */
+        
+    }
+
+    .registration{
+        text-align: center;
+        /* padding-left: 5%; */
+        
+    }
+    .registration h3{
+        font-size: 40px;
+    }
+    
+    .registration input{
+        width: 80%;
+        margin-bottom: 1%;
+        border: 1px solid black;
+        height: 4vh;
+    }
+
+    #registration-btn[type=button]{
+        margin-left: 0%;
+    }
+
+    .check{
+        font-weight: 600;
+        width: 90%;
+        margin-left: 3%;
+    }
+    .check input{
+        position: relative;
+        transform: scale(2);
+        width: auto;
+    }
+
+    footer{
+        display: block;
+        position: relative;
+        text-align: left;
+        font-size: 28px;
+        width: 100%;
+        height: 54vh;
+        list-style: none;
+    }
+    footer ul li{
+        display: block;
+        float: none;
+    }
+    
+    #instagram{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 1%;
+        right: 99%;
+    }
+    #instagramaccount{
+        visibility: hidden;
+
+    }
+
+    #twitter{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 35%;
+        right: 65%;
+        
+    }
+    #twitteraccount{
+        visibility: hidden;
+    }
+
+    #facebook{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 61%;
+        right: 39%;
+    }
+    #facebookaccount{
+        visibility: hidden;
+    }
+    
+    #copyright2022{
+        position: absolute;
+        font-size: 28px;
+        top: 55%;
+        bottom: 45%;
+        left: 6%;
+    }
+    
+    #warning{
+        position: absolute;
+        top: 60%;
+        bottom: 40%;
+        left: 6%;
+    }
+}

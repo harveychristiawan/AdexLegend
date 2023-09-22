@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="home.html"><img src="assets/logo adex legends.png" alt="Logo Adex Legends"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="legend.html">LEGENDS</a></li>
+                    <li><a href="maps.html">MAPS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="#">REGISTRATION</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="registration">
+        <form method="post">
+            <h3>Registration</h3>
+            <br>
+            <p>Full Name :</p>
+            <input type="text" name="fullname" id="fullname">
+            <div id="errorfullname" class="color-red"></div>
+            <p>Username :</p>
+            <input type="text" name="username" id="username">
+            <div id="errorusername" class="color-red"></div>
+            <p>Email :</p>
+            <input type="text" name="email" id="email">
+            <div id="erroremail" class="color-red"></div>
+            <p>Password :</p>
+            <input type="password" name="password" id="password">
+            <div id="errorpassword" class="color-red"></div>
+            <p>Confirm Password :</p>
+            <input type="password" name="confirm_password" id="confirm_password">
+            <div id="errorconfirmpassword" class="color-red"></div>
+            <p>Address :</p>
+            <input type="text" name="address" id="address">
+            <div id="erroraddress" class="color-red"></div>
+            <br>
+            <div class="check">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                 <label for="checkbox1">I Agree to the terms & agreement of service</label>
+                <div id="errorcheckbox" class="color-red"></div>
+            </div>
+            <br>
+            <button id="registration-btn" type="button" onclick="validation()">Register</button>
+        </form>
+    </div>
+    <footer>
+        <h5>Our Social Media,</h5>
+        <ul>
+            <a href="https://www.instagram.com/playapex/">
+                <li><img id="instagram" src="assets/instagram.png" alt="instagram"></li>
+                <li><h7 id="instagramaccount">@adexlegend</h7></li>
+            </a>
+            <a href="https://twitter.com/PlayApex">
+                <li><img id="twitter" src="assets/twitter.png" alt="twitter"></li>
+                <li><h7 id="twitteraccount">@adexlegend</h7></li>
+            </a>
+            <a href="https://www.facebook.com/playapex/">
+                <li><img id="facebook" src="assets/facebook.png" alt="facebook"></li>
+                <li><h7 id="facebookaccount">Adex Legend</h7></li>
+            </a>
+            <li><h8 id="copyright2022">© 2022 Electronic Arts Inc.</h8></li>
+            <li><img id="warning" src="assets/teen blood violence warning.png" alt="Violence warning"></li>
+        </ul>
+    </footer>
+<script src="registration.js"></script>
+</body>
+</html>

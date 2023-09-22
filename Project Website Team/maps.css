@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    width: 100%;
+    /* height: 110px; */
+    height: 15vh;
+    font-size: 20px;
+    background-color: rgba(206, 206, 206, 1);
+    position: absolute;
+    /* position: relative; */
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    padding: 3% 3%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+nav img{
+    width: 145px;
+    height: 90px;
+    left: 40px;
+    top: 7px;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 0px 6rem;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.navbar ul li :hover{
+    color: red;
+    transition: 0.3s;
+}
+.maps-intro{
+    position: relative;
+    top: 15vh;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    font-size: 41px;
+    background-image: url(assets/red\ background.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.maps-button ul li{
+    display: inline-block;
+    padding: 0px 2rem;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* top: 155%; */
+}
+.maps-arena:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.maps-br:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.maps-arena{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border: 5px solid white;;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: auto;
+    left: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+.maps-br{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border: 5px solid white;;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    right: auto;
+    left: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.arenalist{
+    position: relative;
+    /* top: 110%; */
+    top: 10vh;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-image: url(assets/sky\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    /* align-items: center; */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#arenahead{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 41px;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.arena-pic{
+    width: 500px;
+    height: 300px;
+    /* margin: 0 30px; */
+    font-size: 40px;
+    top: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.arena-pic img{
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.brlist{
+    position: relative;
+    /* top: 110%; */
+    top: 10vh;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-image: url(assets/sky\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: none;
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#brhead{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 41px;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.br-pic{
+    width: 500px;
+    height: 300px;
+    /* margin: 0 30px; */
+    font-size: 41px;
+    top: auto;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+}
+.br-pic img{
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.br-pic a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    text-align: left;
+    padding-top: 30px;
+    font-size: 32px;
+    /* top: 245vh; */
+    /* top: 256vh; */
+    top: auto;
+    width: 100%;
+    height: 250px;
+    padding-left: 6%;
+    background-color: rgba(206, 206, 206, 1);
+    list-style: none;
+    z-index: 1;
+    font-family: Roboto;
+    text-transform: none;
+}
+
+footer img{
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    padding: 20px;
+    padding-left: 0%;
+    text-align: left;
+    float: left;
+    object-fit: cover;
+    text-decoration: none;
+}
+
+footer ul li{
+    
+    padding: 0px 5rem;
+    display: inline-block;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+#instagram{
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 200px;
+}
+
+#twitter{
+    position: absolute;
+    top: 75px;
+    width: 115px;
+    left: 400px;
+}
+
+#facebook{
+    position: absolute;
+    top: 75px;
+    width: 90px;
+    left: 720px;
+}
+
+#instagramaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 175px;
+}
+
+#twitteraccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 495px;
+    color: black;
+}
+
+#facebookaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 805px;
+    color: black;
+}
+
+#copyright2022{
+    position: absolute;
+    font-size: 30px;
+    top: 195px;
+    left: 90px;
+}
+
+#warning{
+    position: absolute;
+    top: 65px;
+    width: 250px;
+    height: 150px;
+    right: 50px;
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        font-size: 5px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 1rem;
+        position: absolute;
+    }
+    .header img{
+        width: 50%;
+        max-width: 110px;
+        height: 100%;
+        max-height: 80px;
+        left: 3%;
+        top: 50%;
+        transform: translate(-3%, -50%);
+        
+    }
+    .navbar ul li{
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        margin-top: 1%;
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        flex-direction: column;
+        /* left: 65%; */
+        
+    }
+   
+    .maps-intro h3{
+        font-size: 30px;
+    }
+    .maps-button ul li{
+        transform: scale(0.7);
+        padding-bottom: 4%;
+        
+    }
+    .maps-button{
+        padding-bottom: 18%;
+    }
+    .arenalist{
+        padding-bottom: 10%;
+    }
+    .arena-pic{
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+    .br-pic{
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+    #arenahead{
+        font-size: 24px;
+    }
+    #brhead{
+        font-size: 24px;
+    }
+    .maps-name{
+        font-size: 21px;
+    }
+    footer{
+        display: block;
+        position: relative;
+        text-align: left;
+        font-size: 28px;
+        width: 100%;
+        height: 54vh;
+        list-style: none;
+        margin-top: 10%;
+    }
+    footer ul li{
+        display: block;
+        float: none;
+    }
+    
+    #instagram{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 1%;
+        right: 99%;
+    }
+    #instagramaccount{
+        visibility: hidden;
+
+    }
+
+    #twitter{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 35%;
+        right: 65%;
+        
+    }
+    #twitteraccount{
+        visibility: hidden;
+    }
+
+    #facebook{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 61%;
+        right: 39%;
+    }
+    #facebookaccount{
+        visibility: hidden;
+    }
+    
+    #copyright2022{
+        position: absolute;
+        font-size: 28px;
+        top: 55%;
+        bottom: 45%;
+        left: 6%;
+    }
+    
+    #warning{
+        position: absolute;
+        top: 60%;
+        bottom: 40%;
+        left: 6%;
+    }
+}

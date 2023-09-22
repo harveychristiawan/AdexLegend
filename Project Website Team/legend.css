@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    /* height: 110px; */
+    height: 15vh;
+    font-size: 20px;
+    background-color: rgba(206, 206, 206, 0.851);
+    position: absolute;
+    /* position: relative; */
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    padding: 3% 3%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+nav img{
+    width: 145px;
+    height: 90px;
+    left: 40px;
+    top: 7px;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 0px 6rem;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.navbar ul li :hover{
+    color: red;
+    transition: 0.3s;
+}
+.skybackground img{
+    position: relative;
+    width: 100%;
+    height: 220vh;
+    z-index: 0;
+    top: 15vh;
+}
+.ourlegends{
+    position: absolute;
+    text-align: center;
+    height: 265vh;
+    width: 100%;
+    top: 15vh;
+    padding-top: 7%;
+    font-size: 8vh;
+    font-weight: bold;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(29, 184, 245, 0.315), rgba(7, 23, 94, 0.212)), url(assets/blue\ sky.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.ourlegends h3{
+    font-family: 'Roboto Flex', sans-serif;
+    text-transform: uppercase;
+}
+
+.ourlegends a{
+    text-decoration: none;
+    color: black;
+}
+.ourlegends-desc{
+    font-size: 5vh;
+    top: 70%;
+    padding-top: 4%;
+    z-index: 1;
+}
+
+.legend-pic{
+    width: 200px;
+    height: 440px;
+    margin: 0 30px;
+    font-size: 30px;
+    top: 1%;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.legend-pic a:hover{
+    color: rgb(233, 14, 14);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.legend-pic img{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+}
+.angka{
+    font-size: 1rem;
+}
+
+#gibraltarpng{
+    position: relative;
+    width: 250px;
+    height: 450px;
+}
+#lifelinepng{
+    position: relative;
+    width: 230px;
+}
+#pathfinderpng{
+    position: relative;
+    width: 230px;
+    height: 470px;
+}
+
+footer{
+    position: absolute;
+    text-align: left;
+    color: black;
+    padding-top: 30px;
+    font-size: 32px;
+    /* top: 245vh; */
+    /* top: 256vh; */
+    top: 247%;
+    width: 100%;
+    height: 250px;
+    padding-left: 6%;
+    background-color: rgba(206, 206, 206, 1);
+    list-style: none;
+    z-index: 1;
+}
+
+footer img{
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    padding: 20px;
+    padding-left: 0%;
+    text-align: left;
+    float: left;
+    object-fit: cover;
+    text-decoration: none;
+}
+
+footer ul li{
+    
+    padding: 0px 5rem;
+    display: inline-block;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+#instagram{
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 200px;
+}
+
+#twitter{
+    position: absolute;
+    top: 75px;
+    width: 115px;
+    left: 400px;
+}
+
+#facebook{
+    position: absolute;
+    top: 75px;
+    width: 90px;
+    left: 720px;
+}
+
+#instagramaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 175px;
+}
+
+#twitteraccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 495px;
+    color: black;
+}
+
+#facebookaccount{
+    position: absolute;
+    font-size: 30px;
+    top: 110px;
+    left: 805px;
+    color: black;
+}
+
+#copyright2022{
+    position: absolute;
+    font-size: 30px;
+    top: 195px;
+    left: 90px;
+}
+
+#warning{
+    position: absolute;
+    top: 65px;
+    width: 250px;
+    height: 150px;
+    right: 50px;
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        font-size: 5px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 1rem;
+        position: absolute;
+    }
+    .header img{
+        width: 50%;
+        max-width: 110px;
+        height: 100%;
+        max-height: 80px;
+        left: 3%;
+        top: 50%;
+        transform: translate(-3%, -50%);
+        
+    }
+    .navbar ul li{
+        width: 100%;
+        display: flex;
+        font-size: 12px;
+        margin-top: 1%;
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-bottom: 2%;
+        flex-direction: column;
+        /* left: 65%; */
+        
+    }
+    .ourlegends{
+        height: 2500px;
+        
+    }
+    .ourlegends h3{
+        font-size: 0.5em;
+        
+    }
+    .legend-pic img{
+        transform: scale(0.8);
+    }
+    
+    .ourlegends-desc{
+        font-size: 20px;
+        top: 80%;
+        padding-top: 4%;
+        z-index: 1;
+        width: 60%;
+        text-align: center;
+        
+        margin-left: 20%;
+    }
+    
+    .angka{
+        font-size: 0.75em;
+    }
+
+    footer{
+        display: block;
+        position: relative;
+        text-align: left;
+        font-size: 28px;
+        width: 100%;
+        height: 54vh;
+        list-style: none;
+        top: 90em;
+    }
+    footer ul li{
+        display: block;
+        float: none;
+    }
+    
+    #instagram{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 1%;
+        right: 99%;
+    }
+    #instagramaccount{
+        visibility: hidden;
+
+    }
+
+    #twitter{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 35%;
+        right: 65%;
+        
+    }
+    #twitteraccount{
+        visibility: hidden;
+    }
+
+    #facebook{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 61%;
+        right: 39%;
+    }
+    #facebookaccount{
+        visibility: hidden;
+    }
+    
+    #copyright2022{
+        position: absolute;
+        font-size: 28px;
+        top: 55%;
+        bottom: 45%;
+        left: 6%;
+    }
+    
+    #warning{
+        position: absolute;
+        top: 60%;
+        bottom: 40%;
+        left: 6%;
+    }
+}
